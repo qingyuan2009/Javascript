@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            \n  表示换行
+            \t  tab键
+            \\  \
+        */
+        var str = "我说\"今天天气好\"";
+        var a = 123.456;
+        document.writeln(str + a + '\n');
+        document.writeln(typeof str + '\n');
+        document.writeln(typeof a + '\n');
+        document.writeln(Number.MAX_VALUE + '\n' );
+        document.writeln(Number.MAX_VALUE *  Number.MAX_VALUE  + '\n' );  //Infinity
+        document.writeln("abc" * "bcd"  + '\n' );  //NaN
+
+        var c = 0.1 + 0.2;  // 浮点运算会不准确
+        document.writeln(c +  '\n' );  //0.300000000...4
+
+        var bool = true;
+        var nullObject = null;
+        document.writeln(typeof nullObject + '\n');  //object
+        var d;
+        document.writeln(d +  '\n' ); //undefined
+
+        document.writeln(a.toString() +  '\n' );  //toString()
+        document.writeln(String(a) +  '\n' );  //String()
+
+        var stringNum = "123";
+        document.writeln(Number(stringNum) +  '\n' );  //Number()
+
+        var num1 = "123px";
+        document.writeln(parseInt(num1) +  '\n' );  //parseInt()
+        var num2 = "123.456px";
+        document.writeln(parseFloat(num2) +  '\n' );  //parseFloat()
+
+    </script>
+
+    
+</body>
+</html>
